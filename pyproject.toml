@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idempotency-receipt-ledger"
+version = "1.0.0"
+description = "A dependency-free SQLite receipt ledger for idempotent side-effect workflows."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "paper-daemon"}]
+
+[project.scripts]
+receipt-ledger = "idempotency_receipt_ledger.cli:main"
