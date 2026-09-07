@@ -59,6 +59,18 @@ This makes the dangerous decision visible to the orchestration layer instead of 
 - Failed retries require an explicit flag.
 - The tool never performs the external side effect itself.
 
+## Related project: AgentLink
+
+This ledger explores one reliability primitive used by longer-running agent systems: preserving enough durable evidence to avoid replaying an external effect just because a process, chat turn, or network request was interrupted.
+
+That larger problem is explored in **AgentLink**, a project aimed at turning ordinary chat sessions into durable, long-running AI-agent execution slots across turns, workers, devices, and tools.
+
+- AgentLink: https://github.com/paper-daemon/AgentLink
+- Interactive continuity demo: https://paper-daemon.github.io/agentlink-continuity/
+- Chat Long-Turn Continuity Demo: https://github.com/paper-daemon/AgentLink/tree/main/demos/chat-long-turn-continuity
+
+This repository remains an independent MIT-licensed tool. The link is conceptual and does not imply that the private AgentLink production core is published here.
+
 ## Test
 
 ```bash
