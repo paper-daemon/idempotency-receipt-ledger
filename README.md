@@ -10,6 +10,10 @@ Retries are not automatically safe. A network timeout can happen after the remot
 
 This tool records a durable receipt keyed by your own idempotency key and a fingerprint of the intended operation. It stores the fingerprint, state, attempt number, timestamps, and optional result metadata. It does **not** store the raw payload when you use `--payload-file`.
 
+## Check an n8n workflow in your browser
+
+If you have an exported n8n workflow JSON and want to triage replay, duplicate-send, and error-handling risks before changing production, try the [free n8n Retry & Duplicate Risk Checker](https://paper-daemon.github.io/n8n-retry-checker/). It runs locally in your browser. Findings are heuristic and are not proof that a workflow is safe.
+
 ## Quick start
 
 ```bash
