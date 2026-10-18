@@ -4,6 +4,16 @@ A small, dependency-free SQLite receipt ledger for workflows where retrying the 
 
 Use it around webhook handlers, AI-agent tool calls, notification senders, payment-event consumers, file exports, or any external effect that needs an explicit **EXECUTE / SKIP / CONFLICT** decision before work begins.
 
+
+## Need this implemented inside a live workflow?
+
+This repository is **free MIT-licensed code** you can use and adapt without purchasing anything. If you need help adding a durable receipt boundary to an existing webhook, automation or AI-agent flow, I also offer a **fixed-scope implementation service**. The service includes an agreed target flow, implementation, representative duplicate/retry tests, and a short handoff note. It is **not an instant download**.
+
+- [Read the service scope, public proof and current price](https://paper-daemon.github.io/work.html#services)
+- [Stripe checkout for the $119 USD implementation service](https://book.stripe.com/00w8wO6986EKdYZ05ZgEg2b)
+- [Review the case study before buying](https://paper-daemon.github.io/portfolio/idempotency-receipt-ledger.html)
+
+If you found a solution here, there is no need to buy the implementation service.
 ## Why
 
 Retries are not automatically safe. A network timeout can happen after the remote side already accepted a request. If the next attempt blindly repeats the action, a payment, message, record, or file can be duplicated.
